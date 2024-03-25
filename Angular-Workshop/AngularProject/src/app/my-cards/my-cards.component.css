@@ -1,14 +1,22 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
+    font-weight: bolder;
 }
-
-.container{
-    width: 80%;
-    margin: auto;
-    background-color: blueviolet;
+h1{
+    font-size: 30px; 
+    font-weight: bolder;
 }
-
-.container div{
+.container>div>div{
     display: flex;
+    width: 100%;
+    gap: 5px;
 }
-
+.date-settings{
+    color: white;
+    border-radius: 5px;
+}
+.date-settings>p{
+    padding: 2px;
+    border-radius: 3px;
+    background-color: rgba(121, 154, 166, 0.486);
+}

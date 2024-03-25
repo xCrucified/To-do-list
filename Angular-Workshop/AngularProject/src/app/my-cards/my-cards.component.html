@@ -1,6 +1,11 @@
-<div class="container">
-    <div>
+<span class="container">
+  <div>
+    <div [ngStyle]="{'background-color': getBackgroundColor()}">
       <input type="checkbox" disabled [checked]="card.isActive == true">
-        <p>{{card.name}} {{card.date | date:'shortDate'}}</p>
+      <p class="{{setExclaminationMark()}}" [ngStyle]="{'text-decoration': getCrossedText()}">{{card.name}}</p>
+      <span class="date-settings">
+        <p>{{card.date | date:'shortDate'}}</p>
+      </span>
     </div>
-</div>
+  </div>
+</span>
